@@ -3,10 +3,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Importar a função tempo
-const tempo = require('./api/Data_atual'); // Remova .default se estiver usando CommonJS
-
-// Importar a função obterDiaDaSemana   
+// Importar as funções
+const tempo = require('./api/Data_atual'); // Certifique-se de que o caminho está correto
 const DiaDaSemana = require('./api/DiaDaSemana');
 
 // Rota principal
