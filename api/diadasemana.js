@@ -8,7 +8,7 @@ module.exports = (request, response) => {
     const partes = data.split('/');
     if (partes.length !== 3) {
         return response.send('Data inválida. Use o formato dd/mm/aaaa.');
-    }A
+    }
 
     const dia = parseInt(partes[0], 10);
     const mes = parseInt(partes[1], 10) - 1; // Meses em JavaScript são 0-indexados
